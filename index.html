@@ -25,37 +25,45 @@
   </head>
   <body>
     <div id="nav">
-      <!-- <div> -->
+      <div>
       <a href="index.html">
         <img
           src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=1.3"
           alt="Ketto"
       /></a>
-      <!-- </div> -->
-
-      <a href="">Browse Fundraisers</a>
-
-      <select name="Fundraise" id="">
-        <option value="">Fundraise For</option>
-        <option value="medcialTreament">Medical Treatment</option>
-        <option value="NGO">NGO / Charity</option>
-        <option value="otherCause">Other Cause</option>
-      </select>
-      <a href="">How It Works</a>
-      <a href=""><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+    </div>
       <div>
-        <button>
-          <i
-            class="fa fa-whatsapp"
-            aria-hidden="true"
-            style="font-size: 17px"
-          ></i
-          >&nbsp;Chat
-        </button>
-        <button>Start a Fundraiser</button>
-      </div>
+        <a href="">Browse Fundraisers</a>
+           <select name="Fundraise" id="FundraiseNav">
+          <option value="">Fundraise For</option>
+          <option value="medcialTreament">Medical Treatment</option>
+          <option value="NGO">NGO / Charity</option>
+          <option value="otherCause">Other Cause</option>
+        </select>
+       
+        <a href="">How It Works</a>
+        <div class="verticalLine"></div>
 
-      <a href="">Sign In</a>
+        <a href=""><i class="fa-solid fa-magnifying-glass" style="margin-top: 4px;"></i>&nbsp;Search</a>
+      </div>
+      <div>
+        <a href="https://api.whatsapp.com/send?phone=919930088522">
+          <button id="chat">
+            <i
+              class="fa fa-whatsapp"
+              aria-hidden="true"
+              style="font-size: 17px; color: #25d366"
+            ></i
+            >&nbsp;Chat
+          </button></a
+        >
+
+        <a href="./fundraise.html"
+          ><button id="startFund">Start a Fundraiser</button></a
+        >     
+
+      <div id="SignInElement">Sign In</div>        
+    </div>
     </div>
 
     <div id="topFundsForMedical">
@@ -115,10 +123,15 @@
         />
       </div>
     </div>
+    <div id="trendHead">
+      <h2>Trending Fundraisers </h2>
+      <p>View the fundraisers that are most active right now</p>
+    </div>
 
-    <h2>Trending Fundraisers</h2>
     <div id="trendingFund"></div>
-
+    <a class="prevTrending" onclick="plusSlidesTrending(-1)">❮</a>
+    <a class="nextTrending" onclick="plusSlidesTrending(1)">❯</a>
+    <p style="text-align:center;margin-top: 50px;margin-bottom: 80px;">Note: Some fundraisers are not eligible for any tax deduction such as 80G, 501(c), etc.</p>
     <h2>Start a Fundraiser in three simple steps</h2>
     <div id="fund3SimpleSteps">
       <div>
@@ -154,10 +167,8 @@
       </div>
       <div>
         <video
-          src="https://www.ketto.org/assets/videos/screen_recording.webm"
-          autoplay
-          loop
-          muted
+          src="./media/Video/screen_recording.webm" loop    
+          muted autoplay
         ></video>
       </div>
     </div>
@@ -318,15 +329,19 @@
             recovering well. May God bless you all for saving his life!”
             -Dhanasar (Father)
           </p>
-          <p style="color: #01bfbd;"> Read more</p>
+          <p style="color: #01bfbd">Read more</p>
           <div>
-            <p style="color:#999999;">Subscribe to read such inspiring stories</p>
-            <button><i
-              class="fa fa-whatsapp"
-              aria-hidden="true"
-              style="font-size: 17px; color:#25d366"
-            ></i
-            >&nbsp;Subscribe</button>
+            <p style="color: #999999">
+              Subscribe to read such inspiring stories
+            </p>
+            <button>
+              <i
+                class="fa fa-whatsapp"
+                aria-hidden="true"
+                style="font-size: 17px; color: #25d366"
+              ></i
+              >&nbsp;Subscribe
+            </button>
           </div>
         </div>
       </div>
@@ -346,15 +361,19 @@
             eternally grateful to you all for gifting our little bundle of joy a
             second chance at life!” -Reshma (Mother)
           </p>
-          <p style="color: #01bfbd;"> Read more</p>
+          <p style="color: #01bfbd">Read more</p>
           <div>
-            <p style="color:#999999;">Subscribe to read such inspiring stories</p>
-            <button><i
-              class="fa fa-whatsapp"
-              aria-hidden="true"
-              style="font-size: 17px; color:#25d366"
-            ></i
-            >&nbsp;Subscribe</button>
+            <p style="color: #999999">
+              Subscribe to read such inspiring stories
+            </p>
+            <button>
+              <i
+                class="fa fa-whatsapp"
+                aria-hidden="true"
+                style="font-size: 17px; color: #25d366"
+              ></i
+              >&nbsp;Subscribe
+            </button>
           </div>
         </div>
       </div>
@@ -375,15 +394,19 @@
             your donations gave her a new lease on life! She underwent a
             successful liver transplant and is now enjoying her childhood....
           </p>
-          <p style="color: #01bfbd;"> Read more</p>
+          <p style="color: #01bfbd">Read more</p>
           <div>
-            <p style="color:#999999;">Subscribe to read such inspiring stories</p>
-            <button><i
-              class="fa fa-whatsapp"
-              aria-hidden="true"
-              style="font-size: 17px; color:#25d366"
-            ></i
-            >&nbsp;Subscribe</button>
+            <p style="color: #999999">
+              Subscribe to read such inspiring stories
+            </p>
+            <button>
+              <i
+                class="fa fa-whatsapp"
+                aria-hidden="true"
+                style="font-size: 17px; color: #25d366"
+              ></i
+              >&nbsp;Subscribe
+            </button>
           </div>
         </div>
       </div>
@@ -404,15 +427,19 @@
             afford it. We would've lost him had it not been for your generosity
             and prayers. Thank you for lighting up our lives. He is...
           </p>
-          <p style="color: #01bfbd;"> Read more</p>
+          <p style="color: #01bfbd">Read more</p>
           <div>
-            <p style="color:#999999;">Subscribe to read such inspiring stories</p>
-            <button><i
-              class="fa fa-whatsapp"
-              aria-hidden="true"
-              style="font-size: 17px; color:#25d366"
-            ></i
-            >&nbsp;Subscribe</button>
+            <p style="color: #999999">
+              Subscribe to read such inspiring stories
+            </p>
+            <button>
+              <i
+                class="fa fa-whatsapp"
+                aria-hidden="true"
+                style="font-size: 17px; color: #25d366"
+              ></i
+              >&nbsp;Subscribe
+            </button>
           </div>
         </div>
       </div>
@@ -433,15 +460,19 @@
             Moscow, traversing 9100 kms through Russia, to finally end in
             Vladivostok. Amit was one of the only six people who finished t...
           </p>
-          <p style="color: #01bfbd;"> Read more</p>
+          <p style="color: #01bfbd">Read more</p>
           <div>
-            <p style="color:#999999;">Subscribe to read such inspiring stories</p>
-            <button><i
-              class="fa fa-whatsapp"
-              aria-hidden="true"
-              style="font-size: 17px; color:#25d366"
-            ></i
-            >&nbsp;Subscribe</button>
+            <p style="color: #999999">
+              Subscribe to read such inspiring stories
+            </p>
+            <button>
+              <i
+                class="fa fa-whatsapp"
+                aria-hidden="true"
+                style="font-size: 17px; color: #25d366"
+              ></i
+              >&nbsp;Subscribe
+            </button>
           </div>
         </div>
       </div>
@@ -453,22 +484,10 @@
       <button>START A FUNDRAISER FOR FREE</button> <button>TALK TO US</button>
     </div>
 
-
     <h2>Featured In</h2>
     <div class="featuredIn">
-      <div class="featuredSlides"><img src="https://i1.wp.com/aboutswara.com/wp-content/uploads/2016/03/Times-Of-India-Logo.png?w=600&ssl=1" alt=""></div>
-      <div class="featuredSlides"><img src="https://play-lh.googleusercontent.com/2G0Wjgjx5TYsLXFhig2RBYzgepW291fAZzy15ZQsnMoW4i-ThlzvhUmBNu5W76GFboUF" alt=""></div>
-      <div class="featuredSlides"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF_GiwQjAE17BC-CVz7IW5sglpobTNUG8McrShIDvUIQ&s" alt=""></div>
-      <div class="featuredSlides"><img src="https://play-lh.googleusercontent.com/x8tXbZbBScqoeHVV_205f9HCLcNk1ccOOxlgqQwiJPrT7HZAmnYSMnGvl391qwKjVaW_" alt=""></div>
-      <div class="featuredSlides"><img src="https://i.pinimg.com/originals/02/66/5e/02665edbd00e21575a777f881aa5187f.jpg" alt=""></div>
-      <div class="featuredSlides"><img src="https://gumlet.assettype.com/afaqs%2F2019-07%2F672ebd1b-b1cc-4ae6-9063-205ff7ec7eb9%2Fafaqs_OG_image.jpg?w=1200&auto=format%2Ccompress&ogImage=true" alt=""></div>
-      <div class="featuredSlides"><img src="https://play-lh.googleusercontent.com/IM5q7H7YxOAe7x0EAm6slWfaTHTKLXR9DwbAeiq418y_ZCjnoPsKI-brVrFHpF1k3LM" alt=""></div>
-      <div class="featuredSlides"><img src="https://www.medicalfair-india.com/medicacache/pica/3/3/4/0/4/6/1/275721646920687/Express_Healthcare_Logo_235x123.jpg" alt=""></div>
-
       <a class="prevFeatured" onclick="plusSlidesFeatured(-1)">❮</a>
       <a class="nextFeatured" onclick="plusSlidesFeatured(1)">❯</a>
-
-
     </div>
 
     <div id="beforeFooter">
@@ -555,8 +574,21 @@
         <p></p>
         <p>Trust & Safety</p>
         <p>Plans & Pricing</p>
-        <p>Contanct USf</p>
+        <p>Contanct US</p>
       </div>
+    </div>
+    <div>
+      <img
+        src="https://ketto.gumlet.io/assets/images/homepage/footer-secured-card.png?w=457&dpr=1.3"
+        alt=""
+      />
+    </div>
+    <div>
+      <hr />
+      <p>
+        Copyright © 2022 Ketto Online Ventures Pvt Ltd. All Rights Reserved.
+        Terms of Use | Privacy Policy | AML Policy | Use of cookies
+      </p>
     </div>
   </body>
 </html>

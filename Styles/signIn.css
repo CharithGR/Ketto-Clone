@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+    text-decoration: none;
+}
+
+
+body{
+    background-color: #3d3d3d;
+    margin: 0px;
+    padding: 0px;
+}
+#login{
+    width: 45%;
+    margin: auto;
+    margin-top:5%;
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 70px;
+}
+#login>div{
+    display: flex;
+    gap: 50px;
+    padding-bottom: 75px;
+}
+#login>div>div:first-child{
+    width: 50%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+input[type="submit"]{
+    background-color: #01bfbd;
+    color: white;
+    font-size: 17px;
+    padding: 10px 16px;
+    margin: 10px 0px 5px;
+    border-radius: 4px;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+form+div>p:first-child{
+    color: #01bfbd;
+    font-size: 14px;
+    text-align: center;
+}
+form+div>p:first-child:hover{
+    cursor: pointer;
+}
+form+div>p:nth-child(2){
+    color: #999999;
+    font-size: 12px;
+    text-align: center;
+}
+form+div>p:nth-child(3){
+    color: #444444;
+    font-size: 17px;
+    text-align: center;
+}
+#fund{
+    color: #01bfbd;
+}
+#fund:hover{
+    cursor: pointer;
+}
+hr {
+    border: none;
+    border-left: 2px solid #d7efef;
+    color: #444444;
+    overflow: visible; 
+    text-align: center;         
+}
+hr:after {
+    background: #fff;
+    content: 'OR';
+    position: relative;
+    left: -13px;
+    bottom: -45%;
+    display: flex;
+    align-items: center;
+}
+
+#login>div>div:last-child{
+    display: flex;
+    background-color: #4285f4;
+    align-self: center;
+    justify-content: space-around;
+    border-radius: 4px;
+   padding: 3px;
+    font-size: 17px;
+}
+#login>div>div:last-child:hover{
+    cursor: pointer;
+}
+#login>div>div:last-child img{
+    width: 17%;
+}
+#login>div>div:last-child button{
+    background-color: #4285f4;
+color: white;
+border: none;
+}
+#login>div>div:last-child button:hover{
+    cursor: pointer;
+}
+a{
+    display:inline-flex;
+}
