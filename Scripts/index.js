@@ -1,46 +1,5 @@
 
 
- let ActiveUser=JSON.parse(localStorage.getItem("ActiveUser"))||[];
-let FundraiseNav=document.getElementById("FundraiseNav").addEventListener("change",function(){
-  location.href="./fundraise.html"
-})
-
-let isLoggedIn=localStorage.getItem("isLoggedIn") || false;
-let SignInElement=document.getElementById("SignInElement");
-SignInElement.addEventListener("click",function(){
-  if(SignInElement.innerText=="Sign In"){
-    location.href="./signIn.html"
-  }else {
-    let SignInElementSelect=document.getElementById("SignInElementSelect");
-    console.log(SignInElementSelect.value)
-    SignInElementSelect.addEventListener("change",function(){
-   if(SignInElementSelect.value=="Logout"){
-    isLoggedIn=false;
-    localStorage.removeItem("isLoggedIn")
-    localStorage.removeItem("ActiveUser")
-    window.location.reload();
-   }
-  })
-  }
-})
-if(isLoggedIn){
-  
-    SignInElement.innerHTML=ActiveUser.name
-    let select =document.createElement("select"); 
-    select.setAttribute("id","SignInElementSelect"); 
-      let name=document.createElement("option");
-      name.innerText=ActiveUser.name;
-      let LogOut= document.createElement("option");
-      LogOut.value="Logout"
-      LogOut.innerText="Log Out";
-      select.append(name,LogOut);
-      SignInElement.append(select)  
-  
-}
-
-
-
-
 let successSlideIndex = 1;
 showSlidesSuccess(successSlideIndex);
 
@@ -274,7 +233,7 @@ function plusSlidesTrending(n){
   trendflag=trendingIndex
   trendingDisp()
 }
-if(trendingIndex>trendingFund.length-2){
+if(trendingIndex>=trendingFund.length){
   trendingIndex=0;
 }
 if(trendingIndex<0){
@@ -288,7 +247,7 @@ function trendingDisp(){
     if(trendingIndex>=trendingFund.length){
       trendingIndex=0;
       trendflag=0;
-      trendingDisp()
+      // trendingDisp()
     }
     if(trendingIndex<0){
       trendingIndex=trendingFund.length-3;
@@ -296,6 +255,11 @@ function trendingDisp(){
   let parentDiv=document.createElement("div");
   let divImg=document.createElement("div");
   let div =document.createElement("div")
+  let divChild=document.createElement("div");
+  let divButton=document.createElement("div");
+  divButton.setAttribute("id", "trendingButtondiv")
+
+  divChild.setAttribute("id", "DaysSupporters")
 
   let img= document.createElement("img");
   img.src = trendingFund[trendingIndex].img;
@@ -307,28 +271,40 @@ function trendingDisp(){
   by.innerText="by "+trendingFund[trendingIndex].by;
 
   let Amount = document.createElement("h3")
-  Amount.innerText=trendingFund[trendingIndex].AmountRaised+" raised out of "+trendingFund[trendingIndex].AmountNeeded;
-
+  Amount.innerHTML=`₹ ${trendingFund[trendingIndex].AmountRaised} <span class="txt"> raised out of ₹ ${trendingFund[trendingIndex].AmountNeeded}</span>`;
+  
   let daysLeft = document.createElement("p")
+  daysLeft.setAttribute("id", "daysLeft");
+
   if(trendingFund[trendingIndex].daysLeft=="Fundraiser Ended"){
     daysLeft.innerText=trendingFund[trendingIndex].daysLeft;
   }else{
   daysLeft.innerText=trendingFund[trendingIndex].daysLeft+" Days Left";
   }
-
   let supporters = document.createElement("p")
+  supporters.setAttribute("id", "supporters")
   supporters.innerText=trendingFund[trendingIndex].supporters+" Supporters"
+
+  let buttonShare = document.createElement("button")
+  buttonShare.innerText="Share"
+  buttonShare.setAttribute("id", "shareButtonTrending")
+
+  let buttonDonate = document.createElement("button")
+  buttonDonate.innerText="Donate"
+  buttonDonate.setAttribute("id", "donateButtonTrending")
+
   divImg.append(img)
-  div.append(title,by,Amount,daysLeft,supporters)
-  parentDiv.append(divImg,div)
+  divChild.append(daysLeft,supporters);
+  divButton.append(buttonShare,buttonDonate);
+  div.append(title,by,Amount,divChild)
+  parentDiv.append(divImg,div,divButton)  
   document.querySelector("#trendingFund").append(parentDiv)
   trendingIndex++
   
 }
 
 trendingIndex=trendflag
-
-if(trendingIndex>trendingFund.length-2){
+if(trendingIndex>=trendingFund.length){
   trendingIndex=0;
 }
 if(trendingIndex<0){

@@ -1,10 +1,8 @@
-
-let userdata=JSON.parse(localStorage.getItem('userdata')) ||[];
-
+let userdata = JSON.parse(localStorage.getItem("userdata")) || [];
 
 let form = document.querySelector("form");
-
-
+let OTP;
+let count = 0;
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
@@ -75,20 +73,45 @@ form.addEventListener("submit", function (event) {
   }
   if (s.length > 1) {
     alert(s.join(" "));
+    return
   }
 
   if (obj.mobile < 1000000000 || obj.mobile > 9999999999) {
     alert("Please enter a valid mobile number");
     return;
   }
+  if (form.sub.value == "Next") {
+    userdata.forEach(function (el) {
+      if (el.email == obj.email) {
+        alert("An account already exists with this email address");
+        count++;
+        return;
+      }
+    });
+  }
 
-  userdata.forEach(function(el){
-    if(el.email==obj.email){
-        alert("An account already exists with this email address")
-        return
+  if (form.sub.value == "Next" && count == 0) {
+    OTP = document.createElement("input");
+    OTP.placeholder = "Enter OTP";
+    document.querySelector("#formOtp").append(OTP);
+    form.sub.value = "Sign Up";
+    return;
+  } else {
+    console.log(OTP.value);
+    if (OTP.value == "1234") {
+      alert("Congrats! You are a part of Ketto.");
+      form.sub.value = "Next";
+    } else {
+      alert("Invalid OTP");
+      return;
     }
-  })
-   userdata.push(obj)
-   localStorage.setItem("userdata", JSON.stringify(userdata))
-    localStorage.setItem("ActiveUser",JSON.stringify(obj));
+  }
+
+  userdata.push(obj);
+  localStorage.setItem("userdata", JSON.stringify(userdata));
+  localStorage.setItem("ActiveUser", JSON.stringify(obj));
+  localStorage.setItem("isLoggedIn", true);
+  localStorage.setItem("ActiveUser", JSON.stringify(userdata[userdata.length-1]));
+
+  location.href = "./index.html";
 });

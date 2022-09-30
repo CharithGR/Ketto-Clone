@@ -1,0 +1,105 @@
+
+#beforeFooter {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #beforeFooter button {
+    width: 172px;
+    height: 50px;
+    padding: 7px;
+    font-weight: bold;
+    border-radius: 42px;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    margin-right: 15px;
+  }
+  #beforeFooter > div:last-child > button:first-child {
+    background-color: #354f84;
+  }
+  #beforeFooter > div:last-child > button:last-child {
+    background-color: #13cb6a;
+  }
+  
+  #footer {
+    background-color: #0b4341;
+    margin-top: 35px;
+    padding: 2% 15%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #footer h3,
+  #footer p,
+  #footer h4 {
+    color: white;
+  }
+  #footer h4 {
+    margin: 3px;
+  }
+  #footer hr {
+    border: none;
+    border-bottom: 1px solid #2b5958;
+    margin: 20px 0px;
+  }
+  #footer hr ~ i {
+    color: white;
+    font-size: 30px;
+    margin-right: 6px;
+  }
+  #footer > div:first-child h3 {
+    width: 35%;
+    margin-bottom: 5px;
+  }
+  #footer > div:first-child p {
+    color: #77cac8;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  #footer > div:first-child img {
+    width: 35%;
+  }
+  #footer > div:nth-child(1) {
+    width: 22%;
+  }
+  #footer > div:nth-child(2) {
+    width: 15%;
+  }
+  #footer > div:nth-child(3) {
+    width: 15%;
+  }
+  #footer > div:nth-child(4) {
+    width: 15%;
+  }
+  #footer > div:nth-child(5) {
+    width: 15%;
+  }
+  #footer+div{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #0b4341;
+    padding: 2% 15%;
+    margin-top: -40px;
+  }
+  #footer+div img{
+    width: 35%;
+  }
+  #footer+div+div{
+    background-color: #0b4341;
+    padding: 2% 15%;
+   
+  }
+  #footer+div+div p{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+  }
+  #footer+div+div hr{
+    border:none;
+  border-bottom: 1px solid #2b5958;
+  }

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse Fundraisers</title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./Styles/navbar.css" />
+    <link rel="stylesheet" href="./Styles/browseFundraiser.css" />
+    <link rel="stylesheet" href="./Styles/footer.css">
+    <link
+      rel="stylesheet"
+      as="font"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&amp;display=swap"
+    />
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</link>
+  </head>
+  <body>
+    <div id="nav">
+      <div>
+        <a href="index.html">
+          <img
+            src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=1.3"
+            alt="Ketto"
+        /></a>
+      </div>
+      <div>
+        <a href="">Browse Fundraisers</a>
+        <select name="Fundraise" id="FundraiseNav">
+          <option value="">Fundraise For</option>
+          <option value="medcialTreament">Medical Treatment</option>
+          <option value="NGO">NGO / Charity</option>
+          <option value="otherCause">Other Cause</option>
+        </select>
+
+        <a href="">How It Works</a>
+        <div class="verticalLine"></div>
+
+        <a href=""
+          ><i class="fa-solid fa-magnifying-glass" style="margin-top: 4px"></i
+          >&nbsp;Search</a
+        >
+      </div>
+      <div>
+        <a href="https://api.whatsapp.com/send?phone=919930088522">
+          <button id="chat">
+            <i
+              class="fa fa-whatsapp"
+              aria-hidden="true"
+              style="font-size: 17px; color: #25d366"
+            ></i
+            >&nbsp;Chat
+          </button></a
+        >
+
+        <a href="./fundraise.html"
+          ><button id="startFund">Start a Fundraiser</button></a
+        >
+
+        <div id="SignInElement">Sign In</div>
+      </div>
+    </div>
+    <div id="topHeading">
+      <img
+        src="https://www.ketto.org/assets/images/Sip-banner-people/sip-banner-pc.png"
+        alt=""
+      />
+      <div>
+        <h1>Save a child Every Month</h1>
+        <h3>
+          Join monthly donars with Social Impact Plan and start saving needy
+          children every month
+        </h3>
+        <button>Start Giving Monthly</button>
+      </div>
+    </div>
+
+    <div id="midSection">
+        <div id="leftCategory">
+            <h3>CATEGORIES</h3>
+            <hr>
+            <ul>
+                <li> All Categories</li>
+                <li>Education</li>
+                <li>Medical</li>
+                <li>Women & Girls</li>
+                <li>Animals</li>
+                <li>Creative</li>
+                <li>Food & Hunger</li>
+                <li>Environment</li>
+                <li>Children</li>
+                <li>Memorial</li>
+                <li>Community Development</li>
+                <li>Others</li>               
+            </ul>
+            <hr>
+            <button>Start a Fundraiser</button>
+           
+        </div>
+        <div>
+            <input type="search" id="searchMid" placeholder="Search for Fundraisers"><button id="searchMidButton">Search</button>
+            <div>
+                <span>Showing fundraisers for</span>
+                <select name="" id="category">
+                <option value="">All Categories</option>
+                <option value="Education">Education</option>
+                <option value="Medical">Medical</option>
+                <option value="Women & Girls">Women & Girls</option>
+                <option value="Animals">Animals</option>
+                <option value="Creative">Creative</option>
+                <option value="Food & Hunger">Food & Hunger</option>
+                <option value="Environment">Environment</option>
+                <option value="Children">Children</option>
+              <option value="Memorial">Memorial</option>
+              <option value="Community Development">Community Development</option>
+              <option value="Others">Others</option></select>
+                <span>under</span>
+                <select name="" id="Type">
+                    <option value="">All Types</option>
+                    <option value="Tax Benefit">Tax Benefit</option>
+                    <option value="Trending">Trending</option>
+                    <option value="Urgently Funds Required">Urgently Funds Required</option>
+                    <option value="Successfully Funded">Successfully Funded</option>
+                </select>
+                <span>from</span>
+                <select name="" id="Location">
+                    <option value="">All Locations</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="New Delhi">New Delhi</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Chennai">Chennai</option>
+                </select>
+            </div>
+            <div id="innerData"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="beforeFooter">
+        <p>
+          Have a question? Check out our
+          <span style="color: #01bfbd">FAQs</span> page or chat with us on
+          Facebook or WhatsApp.
+        </p>
+        <div>
+          <button>
+            <i
+              class="fa fa-facebook-square"
+              aria-hidden="true"
+              style="font-size: 17px; color: white"
+            ></i
+            >&nbsp; CHAT WITH US</button
+          ><button>
+            <i
+              class="fa fa-whatsapp"
+              aria-hidden="true"
+              style="font-size: 17px; color: white"
+            ></i
+            >&nbsp; CHAT WITH US
+          </button>
+        </div>
+      </div>
+  
+      <div id="footer">
+        <div>
+          <div>
+            <img
+              src="https://kettocdn.gumlet.io/images/logo-dark-bg.svg?w=80&dpr=1.3"
+              alt=""
+            />
+          </div>
+          <hr />
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa fa-whatsapp" aria-hidden="true"></i>
+          <h3>1.5M+</h3>
+          <p>Followers</p>
+          <h4>For any queries</h4>
+          <h4>Email:info@ketto.org</h4>
+          <h4>Contact No: +91 9930088522</h4>
+        </div>
+        <div>
+          <h3>Causes</h3>
+          <p>Medical Crowdfunding</p>
+          <p>Cancer Crowdfunding</p>
+          <p>Education Crowdfunding</p>
+          <p>Creative Fundraising</p>
+          <p>Child Welfare</p>
+          <p>Animal Fundraisers</p>
+          <p>COVID-19 Relief Fund</p>
+        </div>
+        <div>
+          <h3>How it works?</h3>
+          <p>Fundraising for NGOs</p>
+          <p>Sponsor A Child</p>
+          <p>Fundraising Tips</p>
+          <p>What is Crowdfunding?</p>
+          <p>Corporates</p>
+          <p>Withdraw Funds</p>
+          <p>Browse Fundraiser</p>
+        </div>
+        <div>
+          <h3>About Us</h3>
+          <p>Team Ketto</p>
+          <p>In The News</p>
+          <p>Our Partners</p>
+          <p>Careers</p>
+          <p>Ketto Blog</p>
+          <p>Success Stories</p>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <p>Medical Finance</p>
+          <p>FAQs & Help Center</p>
+          <p>Are Ketto Campaigns Genuine?</p>
+          <p>Fundraiser Video</p>
+          <p></p>
+          <p>Trust & Safety</p>
+          <p>Plans & Pricing</p>
+          <p>Contanct US</p>
+        </div>
+      </div>
+      <div>
+        <img
+          src="https://ketto.gumlet.io/assets/images/homepage/footer-secured-card.png?w=457&dpr=1.3"
+          alt=""
+        />
+      </div>
+      <div>
+        <hr />
+        <p>
+          Copyright © 2022 Ketto Online Ventures Pvt Ltd. All Rights Reserved.
+          Terms of Use | Privacy Policy | AML Policy | Use of cookies
+        </p>
+      </div>
+  </body>
+</html>
+
+<script src="./Scripts/navbar.js"></script>
+<script src="./Scripts/browseFundraiser.js"></script>
