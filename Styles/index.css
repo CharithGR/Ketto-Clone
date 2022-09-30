@@ -6,8 +6,11 @@ body {
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
   color: #444444;
+  text-decoration: none;
 }
-
+button:hover{
+  cursor: pointer;
+}
 h2 {
   text-align: center;
   font-size: 36px;
@@ -148,6 +151,11 @@ h2 {
   width: 27%;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 #trendingFund >div>div:nth-child(2){
   padding: 2%;
@@ -156,16 +164,58 @@ h2 {
 #trendingFund img{
   width: 100%;
 }
+.txt{
+  font-size: 15px;
+  color:#999999;
+}
 
+#DaysSupporters{
+  display: flex;
+  /* gap: 35px; */
+  justify-content: space-around;
+}
+#trendingButtondiv{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#trendingFund button{
+  width: 135px;
+  height: 40px;  
+  border-radius: 4px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+}
 
+#shareButtonTrending{ 
+  background: #FFFFFF;
 
+  color: #3b5998;
+  border: 1px solid #3B5998;
+}
+#donateButtonTrending{  
+  background: #01bfbd;
+  border: 1px solid #01bfbd;
+  color: white;
+}
+#supporters::before{  
+  content: '\f004';
+  font: var(--fa-font-solid);
+  color: red;
+
+}
+#daysLeft::before{
+  content: '\f017';
+  font: var(--fa-font-regular);
+}
 
 .prevTrending,.nextTrending{
   cursor: pointer;
   position: absolute;
   width: auto;  
   padding: 16px;
-  margin-top: -200px;
+  margin-top: -250px;
   color: #01bfbd;
   font-size: 35px;
   transition: 0.6s ease;
@@ -546,7 +596,7 @@ gap: 10px;
   right: 10%;
 }
 
-
+/* 
 #beforeFooter {
   width: 70%;
   margin: auto;
@@ -648,4 +698,4 @@ gap: 10px;
 }
 #footer+div+div hr{
 border: 1px solid #2b5958;
-}
+} */
