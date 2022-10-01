@@ -23,23 +23,41 @@
     <div>
         <form action="">
             <h2>Tell us more about your Fundraiser...</h2>
-            <input type="text" placeholder="How much do you want to raise?" >
-            <input type="text" placeholder="Fundraiser Title">
-            <label for="">Whom are you raising funds for?</label>
-            <select name="" id="">
-                <option value="">Myself</option>
-                <option value="">Family Member</option>
-                <option value="">Friend</option>
-                <option value="">Pet or Animal</option>
-                <option value="">Charity or Non-Profit</option>
+            <select name="" id="category">
+                <option value="">Purpose of raising funds</option>
+                <option value="Education">Education</option>
+                <option value="Medical">Medical</option>
+                <option value="Women & Girls">Women & Girls</option>
+                <option value="Animals">Animals</option>
+                <option value="Creative">Creative</option>
+                <option value="Food & Hunger">Food & Hunger</option>
+                <option value="Environment">Environment</option>
+                <option value="Children">Children</option>
+              <option value="Memorial">Memorial</option>
+              <option value="Community Development">Community Development</option>
+              <option value="Others">Others</option></select>
+            <input type="number" placeholder="How much do you want to raise?" required id="AmountRequired">
+            <input type="text" placeholder="Fundraiser Title" required id="title">
+            <!-- <label for="">Whom are you raising funds for?</label> -->
+            <select name="" id="fundsForWhom">
+                <option value="">Whom are you raising funds for?</option>
+                <option value="Myself">Myself</option>
+                <option value="Family Member">Family Member</option>
+                <option value="Friend">Friend</option>
+                <option value="Pet or Animal">Pet or Animal</option>
+                <option value="Charity or Non-Profit">Charity or Non-Profit</option>
             </select>
             
-            <textarea name="" id="story1" cols="50" rows="10" placeholder="Tell the story about why you are running a Fundraiser"></textarea>
+            <input type="text" id="desc" placeholder="Tell the story about why you are running a Fundraiser" required>
+
+            <input type="url" id="image" required placeholder="Link of the Image">
+
+            <!-- <textarea name="" id="story1" cols="50" rows="10" placeholder="Tell the story about why you are running a Fundraiser"></textarea> -->
             <!-- <input type="text" placeholder="Tell the story about why you are running a Fundraiser" > -->
 
-    <button id="#btn">Save & Continue&nbsp;<i class="fa fa-angle-right" aria-hidden="true" style="color: white;"></i>
+    <button id="#btn">Start Fundraiser&nbsp;<i class="fa fa-angle-right" aria-hidden="true" style="color: white;"></i>
     </button>       
-    <!-- <input type="file"
+    <!-- <input type="file"m,  
        id="avatar" name="avatar"
        accept="image/png, image/jpeg"> -->
         </form>

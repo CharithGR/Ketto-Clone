@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="./Styles/payment.css">
+</head>
+<body>
+    <div>
+    <select name="" id="cardType">
+        <option value="sel">Select card</option>
+        <option value="CRE">Credit Card</option>
+        <option value="DEB">Debit Card</option>
+      </select>
+  
+      <form action="">
+        <label for="">Enter Name</label>
+        <input type="text" placeholder="Enter Name" id="name" />
+        <label for="">Card Number</label>
+        <input
+          type="tel"
+          placeholder="XXXX-XXXX-XXXX-XXXX"
+          maxlength="19"
+          inputmode="numeric"
+          id="cardNum"
+        />
+        <label for="">CVV</label>
+        <input type="password" placeholder="CVV" id="cvv" />
+        <label for="">Expiry Date</label>        
+        <input type="month" placeholder="MM" min="10" id="exp" />
+        <!-- <input type="year" placeholder="YYYY" min="2022"> -->
+
+        <div id="otp"></div>
+        <input type="submit" name="" id="payBtn" value="Make Payment" />
+      </form>
+    </div>
+</body>
+</html>
+<script src="./Scripts/payment.js"></script>
