@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: #3d3d3d;
+    margin: 0px;
+}
+form{
+    width: 30%;
+    margin: auto;
+    margin-top: 5%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+form>p:nth-child(1){
+    font-size: 12px;
+    text-align: center;
+    color: #01bfbd;
+}
+input{
+    width:100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+input[type="checkbox"]{
+    width: 10%;
+    margin-left: -2%;
+}
+#Amt{
+background-color: #d7efef;
+border-radius: 8px 8px 0px 0px;
+padding: 3px 0px 5px 15px;
+font-size: 14px;
+}
+#Amt>p{
+    font-size: 12px;
+}
+#Amt+p{
+    background-color: #d7efef;
+    margin-top: 0px;
+    border-radius: 0px 0px 8px 8px;
+    padding: 3px 0px 5px 15px;
+    font-size: 14px;
+}
+input[type="checkbox"]+span{
+    font-size: 12px;
+    margin-left: -2%;
+}
+#tip{
+width: 80%;
+margin: auto;
+margin-top: 5px;
+}
+
+#sub{
+    border:none;
+    background: #01bfbd;
+    height: 40px;
+    border-radius: 30px;
+    margin-top: 50px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}

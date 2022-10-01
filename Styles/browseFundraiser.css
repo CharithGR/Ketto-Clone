@@ -112,11 +112,29 @@ body {
 #innerData>div{
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  height: 450px;
-  
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+  padding-bottom: 10px;
  
 }
-
+#innerData button{
+  margin-bottom: 10px;
+  width: 30%;
+  display: block;
+  margin: auto;
+  border-radius: 4px;
+  border:none;
+  background-color: #01BFBD;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  height: 30px;
+}
+#innerData button:hover{
+  cursor: pointer;
+}
 #innerData>div>div{
   display: flex;
   flex-direction: column;
@@ -142,6 +160,7 @@ body {
 .txt{
   color: #999999;
   font-size: 14px;
+  font-weight: 100;
 }
 #searchMid{
     width: 80%;

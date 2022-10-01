@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link
+    rel="stylesheet"
+    as="font"
+    onload="this.onload=null;this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&amp;display=swap"
+  />
+    <link rel="stylesheet" href="./Styles/donate.css">
+</head>
+<body>
+
+    <form action="">
+        <p>Most Donors donate approx &#8377; 1500 to this Fundraiser</p>
+        <input type="number" placeholder="Enter Donation Amount" id="donationAmount" required>
+        <div id="Amt">
+            <p>Ketto is charging 0% platform fee for this fundraiser, relying solely on the generosity of donors like you.</p>
+            <span style="font-weight: 600;">Support us by adding a tip of :</span>
+            <select name="" id="kettoTip">
+                <option value="18">18%</option>
+                <option value="10">10%</option>
+                <option value="5">5%</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+            <p>Total Amount: <span id="totalAmt"></span> </p>
+
+
+            <input type="text" id="name" placeholder="Enter Name" required>
+            <input type="checkbox" ><span>Make my donation anonymous</span> 
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="number" id="mbl" placeholder="Mobile Number" required>
+            <input type="text" name="" id="address" placeholder="Adrress" required>
+            <input type="text" id="pan" placeholder="Pancard" required>
+            <input type="number" id="pincode" placeholder="Pincode" required>
+            <div>
+                <input type="checkbox" id="UPI"><span>Pay via UPI QR Code</span><br>
+                <input type="checkbox" id="card" ><span>Pay via Credit/Debit Card</span>
+            </div>
+        <input type="submit" id="sub" value="Proceed to Pay ₹ 0">
+    </form>
+
+
+</body>
+</html>
+
+<script src="./Scripts/donate.js"></script>

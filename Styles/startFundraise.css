@@ -24,6 +24,7 @@ body {
   label{
     font-size: 14px;
     color:#444444;
+    margin-left: 2%;
   }
   form input{
     width: 100%;
@@ -47,6 +48,7 @@ body {
     border: none;
     display: block;
     margin: auto;
+    margin-top: 60px;
     background-color: #01bfbd;
     color: white;
     font-weight: 600;
@@ -60,4 +62,7 @@ body {
   button:hover{
     cursor: pointer;
   }
+  /* #desc{
+    margin-top: 20px;
+  } */
   

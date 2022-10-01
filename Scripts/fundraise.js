@@ -13,30 +13,30 @@ form.addEventListener("submit", function (event) {
     mobile: form.mobile.value,
   };
 
-  if (obj.name == "") {
-    alert("Please enter a name");
-    return;
-  }
-  if (obj.email == "") {
-    alert("Please enter an email");
-    return;
-  }
-  if (obj.password == "") {
-    alert("Please enter a password");
-    return;
-  }
-  if (obj.mobile == "") {
-    alert("Please enter a mobile number");
-    return;
-  }
+  // if (obj.name == "") {
+  //   alert("Please enter a name");
+  //   return;
+  // }
+  // if (obj.email == "") {
+  //   alert("Please enter an email");
+  //   return;
+  // }
+  // if (obj.password == "") {
+  //   alert("Please enter a password");
+  //   return;
+  // }
+  // if (obj.mobile == "") {
+  //   alert("Please enter a mobile number");
+  //   return;
+  // }
   let s1 = obj.password;
   let lowerCase = "abcdefghijklmnopqrstuvwxyz";
   let upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let num = "0123456789";
   let specialChar = "~`!@#$%^&*()_-+={[}]|:;\"'<,>.?/";
   let s = ["Your password must include"];
-  if (s1.length < 8) {
-    alert("Password length too low,enter password with atleast 8 characters");
+  if (s1.length < 8 || s1.length>20) {
+    alert("Password Length should be betwwen 8 and 20 characters.");
     return;
   }
   for (let i = 0; i < s1.length; i++) {
@@ -76,7 +76,7 @@ form.addEventListener("submit", function (event) {
     return
   }
 
-  if (obj.mobile < 1000000000 || obj.mobile > 9999999999) {
+  if (obj.mobile < 6000000000 || obj.mobile > 9999999999) {
     alert("Please enter a valid mobile number");
     return;
   }
