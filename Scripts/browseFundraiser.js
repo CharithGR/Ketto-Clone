@@ -561,7 +561,7 @@ function disp(res) {
 
     let Amount = document.createElement("h3");
 
-    Amount.innerHTML = `₹ ${el.AmountRaised} <span class="txt"> raised </span>`;
+    Amount.innerHTML = `₹${el.AmountRaised} <span class="txt"> raised out of ₹${el.AmountNeeded}</span> `;
     let DaysLeft = document.createElement("p");
 
     if (el.DaysLeft != "Fundraise Ended") {
