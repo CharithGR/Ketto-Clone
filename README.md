@@ -10,3 +10,4 @@ FEATURES:
           <li>Create a Fundraiser</li> 
           <li>Filters and Search</li> 
         <li>Implementing donating to a Fundraiser</li> 
+[Demo](https://clever-toffee-7b49c5.netlify.app/)
